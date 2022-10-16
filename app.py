@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 import datetime
 import logging
 from typing import Dict, List

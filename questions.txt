@@ -1,0 +1,72 @@
+painter
+Fruit * 2
+Vegetable * 2
+Berry 
+popular tv series
+book author (fiction)
+book author (non-fiction)
+Beverage * 2
+alcohol
+part of human body
+living being
+kitchenware
+piece of furniture
+sportsperson
+city
+country
+Colour * 3
+Verb * 2
+Adjective * 2
+Noun * 2
+Job, occupation * 4
+famous person
+things you find in the bathroom
+things you find in the kitchen
+things you take on holiday
+fruit and vegetables
+things that fly
+things that are orange/yellow
+items you can (could T_T) buy in IKEA
+things you find in a refrigerator
+things that are cold
+things that are hot
+Animal * 3
+scary thing
+things you can turn off
+types of sweets / candy
+Hobbies * 3
+Movie * 3
+movie character * 2
+cartoon / animated series
+cartoon / animated series character * 2
+chemical element
+musician / DJ
+something poisonous
+language
+Computer game
+Politician
+Feeling
+Insect
+Street in Kazan
+Ends with this letter
+contains at least two of this letter
+Unit of measure
+International company
+Brand * 3
+Piece of clothes
+location in a city
+Family member
+Favourite dish
+Tea or coffee (what kind)
+Weapons * 2
+Ice cream flavour
+School/university subject
+Building material
+Way of killing someone
+Crime and misdemeanour
+Something you can find in outer space * 2
+People qualities
+Natural phenomenon
+Relationship between people
+Things you can be allergic to
+Plant
