@@ -7,7 +7,7 @@ book author (fiction)
 book author (non-fiction)
 Beverage * 2
 alcohol
-part of human body
+part of human body * 3
 living being
 kitchenware
 piece of furniture
@@ -33,7 +33,7 @@ things that are hot
 Animal * 3
 scary thing
 things you can turn off
-types of sweets / candy
+types of sweets / candy * 2
 Hobbies * 3
 Movie * 3
 movie character * 2
@@ -48,13 +48,13 @@ Politician
 Feeling
 Insect
 Street in Kazan
-Ends with this letter
-contains at least two of this letter
+Ends with this letter * 3
+contains at least two of this letter * 3
 Unit of measure
 International company
 Brand * 3
 Piece of clothes
-location in a city
+location in a city * 3
 Family member
 Favourite dish
 Tea or coffee (what kind)
@@ -65,8 +65,10 @@ Building material
 Way of killing someone
 Crime and misdemeanour
 Something you can find in outer space * 2
-People qualities
-Natural phenomenon
+People qualities * 3
+Natural phenomenon * 2
 Relationship between people
 Things you can be allergic to
-Plant
+Plant * 3
+Cooking ingredient * 2
+technology or invention * 3
