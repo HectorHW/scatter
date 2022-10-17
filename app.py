@@ -94,7 +94,7 @@ async def ws_root(websocket: WebSocket):
         while True:
             await lock.acquire()
             await websocket.send_json("heartbeat")
-            await asyncio.wait_for(websocket.receive_text(), timeout=2)
+            await asyncio.wait_for(websocket.receive_text(), timeout=4)
             #logging.info(f"heartbeat from {sock_id}")
             lock.release()
             await asyncio.sleep(4)
