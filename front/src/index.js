@@ -214,8 +214,11 @@ function setup_socket() {
 
   socket.onclose = function (_) {
     console.warn("socket closed, reconnecting after 2 seconds");
-    socket = null;
-    setTimeout(setup_socket, 2 + Math.random() / 10);
+    if (socket !== null) {
+      socket = null;
+      setTimeout(setup_socket, 2 + Math.random() / 10);
+    }
+
   }
 
   return socket;
