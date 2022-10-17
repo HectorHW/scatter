@@ -177,24 +177,22 @@ class Application extends React.Component {
   }
 }
 
-
-
-
-
-fetch(`${address}/api/state`).then(resp => resp.json()).then(data => {
-  ReactDOM.render(
-    <Application data={data} />,
-    document.getElementById('root')
-  );
-}
-
-)
-
 var socket = null;
-var attempts = 0;
 
 function setup_socket() {
+  // fetch state every time socket resets 
+  // (because we do not get new state until server sends us update)
+  fetch(`${address}/api/state`).then(resp => resp.json()).then(data => {
+    ReactDOM.render(
+      <Application data={data} />,
+      document.getElementById('root')
+    );
+  })
+
   let sock_addr = address.replace("http", "ws");
+
+  console.warn("setting up socket")
+
   let socket = new WebSocket(`${sock_addr}/ws`);
 
   socket.onmessage = function (event) {
@@ -207,33 +205,20 @@ function setup_socket() {
         document.getElementById('root')
       );
     }
+  }
 
+  socket.onerror = function (_) {
+    console.warn("error in socket");
+    socket.close()
+  }
+
+  socket.onclose = function (_) {
+    console.warn("socket closed, reconnecting after 2 seconds");
+    socket = null;
+    setTimeout(setup_socket, 2 + Math.random() / 10);
   }
 
   return socket;
 }
 
 socket = setup_socket();
-
-
-
-
-
-function tick() {
-
-  function draw_world(response) {
-    response.then(response => response.json()).then(
-      data => {
-        ReactDOM.render(
-          <Application data={data} />,
-          document.getElementById('root')
-        );
-      });
-  }
-
-  draw_world(fetch(`${address}/api/state`));
-  setTimeout(() => requestAnimationFrame(tick), 500)
-
-}
-
-//tick()
