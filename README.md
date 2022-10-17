@@ -1,8 +1,8 @@
 # word game
 
-This repository contains client and backend for simple word game I written for playing at english club of our dormitory.
+This repository contains client and backend for simple word game I wrote for playing at english club of our dormitory.
 
-The rules are simple: there are number of cards with categories and letters. The goal is to be the first to name the word starting with displayed letter that corresponds to current category. The players are expected to use their phones to connect to game server and to see current card and letter on their screen. The game admin logs with preconfigured password to control game state.
+The rules are simple: there are number of cards with categories and letters, the goal is to be the first to name the word starting with displayed letter that corresponds to current category. The players are expected to use their phones to connect to game server and to see current card and letter on their screen. The game admin logs with preconfigured password to control game state.
 
 ## running
 
